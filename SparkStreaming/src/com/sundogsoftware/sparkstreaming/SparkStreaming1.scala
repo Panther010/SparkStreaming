@@ -13,6 +13,8 @@ object SparkStreaming1 {
   
   def main(args: Array[String]){
     
+    //This is spark streaming program to fetch and display twitter data using twitter API
+    //Streaming context is being created which is fetching and printing the tweets.  
     setupTwitter()
     
     val ssc = new StreamingContext("local[*]","PrintTweets", Seconds(1))

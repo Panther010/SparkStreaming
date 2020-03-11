@@ -16,6 +16,13 @@ object SparkStreaming5 {
   
   def main(args: Array[String]) {
     
+    //This is spark streaming program to receive data using Kafka receiver following are the prerequisit
+    //Need to start zookeeper for this first
+    //2nd step is to start Kafka server
+    //create the topic testLogs in case it is not present
+    //Broadcast the file on port 9092 using Kafka topic
+    //this posted file will be listened and processed by spark streaming file
+    
     val ssc = new StreamingContext("local[*]", "Fetching data from Kafka", Seconds(2))
     
     setupLogging()

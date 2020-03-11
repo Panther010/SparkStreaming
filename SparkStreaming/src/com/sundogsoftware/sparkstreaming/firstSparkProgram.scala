@@ -14,6 +14,7 @@ object firstSparkProgram {
   }
   
   def main(args: Array[String]){
+    //This is a spark program to calculate the count of ratings in u.data file
     
     Logger.getLogger("org").setLevel(Level.ERROR)
     

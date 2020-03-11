@@ -13,6 +13,8 @@ object SparkStreaming2 {
   
   def main(args: Array[String]){
     
+    //This spark streaming program fetch and save 1000 tweets into local files
+    
     setupTwitter()
     
     val ssc = new StreamingContext("local[*]","SaveTweets", Seconds(5))

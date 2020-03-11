@@ -12,6 +12,8 @@ object SparkStreaming4 {
   
   def main (args: Array[String]) {
     
+    //This is a spark streaming program to fetch twitter data and calculate popular hash tag for a given window
+    
     setupTwitter()
     
     val ssc = new StreamingContext("local[*]","Popular hash tags", Seconds(2))

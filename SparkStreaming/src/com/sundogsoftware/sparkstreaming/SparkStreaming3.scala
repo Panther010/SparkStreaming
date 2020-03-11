@@ -14,6 +14,8 @@ object SparkStreaming3 {
   
   def main(args: Array[String]){
     
+    //This spark streaming program fetch twitter data and print average length of tweets
+    
     setupTwitter()
     
     val ssc = new StreamingContext("local[*]", "Avg length of tweet", Seconds(2))
